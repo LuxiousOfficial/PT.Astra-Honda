@@ -1,0 +1,160 @@
+.home-profile .logo img {
+    width: 80%;
+}
+
+.home-profile .deskripsi p {
+    text-align: justify;
+}
+
+.home-galery .row1 {
+    display: flex;
+    justify-content: center;
+}
+
+.home-galery .logo img {
+    width: 6.6rem;
+}
+
+.home-galery .list a {
+    text-align: center;
+}
+
+.home-galery .artikel p {
+    max-width: 33rem;
+    text-align: justify;
+}
+
+.home-visi {
+    margin-top: 7rem;
+}
+
+.home-visi .visi p {
+    max-width: 22rem;
+}
+
+.home-slider {
+    margin-top: 3.9rem;
+}
+
+.home-slider img {
+    height: 450px;
+}
+
+.home-visi-misi {
+    margin-top: 7rem;
+}
+
+.home-visi-misi h3 {
+    font-weight: bold;
+    font-size: 2.2rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.home-visi-misi h5 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.home-visi-misi p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.home-youtube {
+    margin-top: 5rem;
+    padding: 0 1rem;
+}
+
+.home-youtube .carousel-inner iframe {
+    width: 100%;
+    height: 35rem;
+}
+
+.home-dealer {
+    margin-top: 6rem;
+    padding: 0 1rem;
+}
+
+.home-dealer .card-body h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.home-dealer .card-body p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 70%;
+    }
+
+    .home-slider img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 63%;
+    }
+
+    .home-slider img {
+        height: 320px;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 58%;
+    }
+
+    .home-profile .logo img {
+        margin-top: 1rem;
+        width: 80%;
+    }
+
+    .home-profile .deskripsi {
+        padding: 0 2rem;
+    }
+
+    .home-galery .artikel p {
+        max-width: 26rem;
+    }
+
+    .home-galery .artikel .dealer p {
+        max-width: 20rem;
+    }
+
+    .home-galery .logo img {
+        width: 5rem;
+    }
+
+    .home-slider img {
+        height: 160px;
+    }
+
+    .home-visi-misi {
+        margin-top: 4rem;
+    }
+
+    .home-dealer {
+        margin-top: 4rem;
+    }
+
+    .home-youtube {
+        margin-top: 3.5rem;
+    }
+
+    .home-youtube .carousel-inner iframe {
+        height: 22rem;
+    }
+}

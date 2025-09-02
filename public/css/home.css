@@ -1,0 +1,113 @@
+/* Matic */
+
+.home-matic {
+    margin-top: 5rem;
+}
+
+.home-matic .container .card {
+    border: 2px solid white;
+    border-radius: 1rem;
+    width: 19rem;
+    margin: auto;
+    transition: .25s;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.home-matic .container .card:hover {
+    transform: scale(1.03);
+    border-color: red;
+}
+
+.home-matic .container .btn:hover {
+    background-color: white;
+    color: red;
+}
+
+/* End Matic */
+
+/* Home Press Release */
+
+.home-release {
+    margin-top: 6rem;
+    padding: 0 1rem;
+}
+
+.home-release .card-body a {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    background-color: red;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    transition: .5s;
+}
+
+.home-release .card-body a:hover {
+    background-color: white;
+    border-color: red;
+    color: red;
+}
+
+/* EndHome press release */
+
+/* Artikel Racing */
+
+.home-racing {
+    margin-top: 6rem;
+}
+
+.home-racing .card-body a {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    background-color: red;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    transition: .5s;
+}
+
+.home-racing .card-body a:hover {
+    background-color: white;
+    border-color: red;
+    color: red;
+}
+
+/* End Artikel Racing */
+
+/* Youtube */
+
+.home-youtube {
+    margin-top: 6rem;
+    padding: 0 1rem;
+}
+
+.home-youtube .carousel-inner iframe {
+    width: 100%;
+    height: 35rem;
+}
+
+
+/* End Youtube */
+
+@media (max-width: 768px) {
+    html {
+        font-size: 63%;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 58%;
+    }
+
+    .home-youtube .carousel-inner iframe {
+        height: 22rem;
+    }
+}

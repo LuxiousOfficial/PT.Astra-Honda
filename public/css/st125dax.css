@@ -1,0 +1,99 @@
+.home-fitur {
+    margin-top: 6rem;
+}
+
+.home-fitur .st125dax img {
+    margin-top: -3rem;
+    width: 53%;
+}
+
+.home-fitur .card img {
+    height: 15rem;
+}
+
+.home-fitur .card h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.home-fitur .card p {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.home-st125dax h2 {
+    margin-top: 5rem;
+}
+
+.home-st125dax .carousel-item img {
+    width: 45%;
+}
+
+.home-spesifikasi {
+    margin-top: 3rem;
+    padding: 0 1rem;
+}
+
+.home-spesifikasi .row1 {
+    display: flex;
+    justify-content: center;
+}
+
+.home-rekomendasi {
+    margin-top: 7rem;
+    padding: 0 1rem;
+}
+
+.home-rekomendasi .card-body a {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    background-color: red;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    transition: .5s;
+}
+
+.home-rekomendasi .card-body a:hover {
+    background-color: white;
+    border-color: red;
+    color: red;
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 70%;
+    }
+    .home-fitur .beat img {
+        margin-top: -9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 63%;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 58%;
+    }
+    .home-fitur .st125dax img {
+        margin-top: -3rem;
+        width: 90%;
+    }
+    .home-st125dax .carousel-item img {
+        width: 80%;
+    }
+    .home-spesifikasi {
+        margin-top: 1rem;
+    }
+    .home-aksesoris {
+        margin-top: 4rem;
+    }
+}

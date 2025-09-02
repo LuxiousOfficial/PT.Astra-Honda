@@ -1,0 +1,39 @@
+/* Matic */
+
+.home-matic {
+    margin-top: 5rem;
+}
+
+.home-matic .container .card {
+    border: 2px solid white;
+    border-radius: 1rem;
+    width: 19rem;
+    margin: auto;
+    transition: .25s;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.home-matic .container .card:hover {
+    transform: scale(1.03);
+    border-color: red;
+}
+
+.home-matic .container .btn:hover {
+    background-color: white;
+    color: red;
+}
+
+/* End Matic */
+
+@media (max-width: 768px) {
+    html {
+        font-size: 63%;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 58%;
+    }
+}

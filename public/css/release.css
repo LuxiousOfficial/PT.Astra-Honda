@@ -1,0 +1,35 @@
+.home-release .container {
+    padding: 0 2rem;
+}
+
+.home-release .container .row img {
+    width: 35rem;
+    border-radius: 1rem;
+}
+
+.home-release .container .row p {
+    text-align: justify;
+}
+
+@media (max-width: 992px) {
+html {
+    font-size: 80%;
+}
+}
+
+@media (max-width: 768px) {
+html {
+    font-size: 63%;
+}
+}
+
+@media (max-width: 450px) {
+html {
+    font-size: 58%;
+}
+
+.home-release .container .row img {
+    max-width: 50rem;
+}
+
+}

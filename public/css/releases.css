@@ -1,0 +1,24 @@
+.home-pressrelease .container .card {
+    border: 2px solid white;
+    border-radius: 1rem;
+    width: 19rem;
+    margin: auto;
+    transition: .25s;
+}
+
+.home-pressrelease .container .btn:hover {
+    background-color: white;
+    color: red;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 63%;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 58%;
+    }
+}
