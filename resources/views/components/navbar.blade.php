@@ -16,7 +16,7 @@
             <x-nav-links href="/" :active="request()->is('/')">Home</x-nav-links>
           </li>
           <li class="nav-item">
-            <x-nav-links href="/products" :active="request()->is('products*')">Products</x-nav-links>
+            <x-nav-links href="/products" :active="request()->is('products*')">Product</x-nav-links>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
