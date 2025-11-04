@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class User extends Authenticatable
 {
@@ -58,5 +59,37 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    protected $with = ['profile', 'education', 'experience', 'file', 'position', 'skill'];
+
+    public function profile(): HasOne
+    {
+        return $this->hasOne(Profile::class);
+    }
+
+    public function education(): HasOne
+    {
+        return $this->hasOne(Education::class);
+    }
+
+    public function experience(): HasOne
+    {
+        return $this->hasOne(Experience::class);
+    }
+
+    public function file(): HasOne
+    {
+        return $this->hasOne(File::class);
+    }
+
+    public function position(): HasOne
+    {
+        return $this->hasOne(Position::class);
+    }
+
+    public function skill(): HasOne
+    {
+        return $this->hasOne(Skill::class);
     }
 }

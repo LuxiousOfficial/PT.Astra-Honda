@@ -14,7 +14,7 @@
                 <div class="col-xxl-12 col-xl-12 col-md-12 col-12">
                     <form method="post" action="/astra/pelamar" enctype="multipart/form-data">
                       @csrf
-                        <div data-mdb-input-init class="form-outline mb-4">
+                          <div data-mdb-input-init class="form-outline mb-4">
                             <label class="form-label fw-bold" for="jabatan_id">Jabatan</label>
                             <select class="form-select" aria-label="Default select example" id="jabatan_id" name="jabatan_id">
                               @foreach ($karirs as $karir)

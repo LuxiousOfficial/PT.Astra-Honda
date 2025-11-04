@@ -1,26 +1,33 @@
 <?php
 
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\DealerController;
 use App\Models\Karir;
+use App\Models\Dealer;
+use App\Models\Kredit;
 use App\Models\Release;
+use App\Models\Service;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\KarirController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\DealerController;
 use App\Http\Controllers\KreditController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\PelamarController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\EducationController;
+use App\Http\Controllers\ExperienceController;
+use App\Http\Controllers\FileController;
 use App\Http\Controllers\HrdKreditController;
 use App\Http\Controllers\HrdPelamarController;
 use App\Http\Controllers\HrdServiceController;
 use App\Http\Controllers\RegistrasiController;
 use App\Http\Controllers\ResetPasswordController;
 use App\Http\Controllers\ForgotPasswordController;
-use App\Http\Controllers\KarirController;
-use App\Http\Controllers\UserController;
-use App\Models\Dealer;
-use App\Models\Kredit;
-use App\Models\Service;
+use App\Http\Controllers\PositionController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SkillController;
 
 Route::get('/', function () {
     return view('home', ['releases' => Release::latest('id')->paginate('6')]);
@@ -251,4 +258,11 @@ Route::get('/dashboardhrdastrahonda/pelamar/', [SearchController::class, 'pelama
 Route::resource('/dashboardhrdastrahonda/user', UserController::class)->middleware(['auth', 'Developer']);
 Route::get('/dashboardhrdastrahonda/user/', [SearchController::class, 'user'])->middleware(['auth', 'Developer']);
 
+Route::get('/user', [EmployeeController::class, 'index', 'education'])->middleware('auth');
 
+Route::resource('/user/profile', ProfileController::class)->middleware('auth');
+Route::resource('/user/education', EducationController::class)->middleware('auth');
+Route::resource('/user/experience', ExperienceController::class)->middleware('auth');
+Route::resource('/user/skills', SkillController::class)->middleware('auth');
+Route::resource('/user/file', FileController::class)->middleware('auth');
+Route::resource('/user/position', PositionController::class)->middleware('auth');

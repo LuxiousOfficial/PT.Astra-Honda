@@ -22,6 +22,11 @@ class Karir extends Model
         return $this->hasMany(Pelamar::class, 'jabatan_id');
     }
 
+    public function position(): HasMany
+    {
+        return $this->hasMany(Position::class);
+    }
+
     public function index()
     {
         $careers = Karir::count();
