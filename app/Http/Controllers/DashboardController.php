@@ -20,7 +20,6 @@ class DashboardController extends Controller
             'services' => Service::count(),
             'dealers' => Dealer::count(),
             'careers' => Karir::count(),
-            'candidates' => Pelamar::count(),
             'users' => User::count(),
             'kredits' => Kredit::latest('id')->get()
         ]);

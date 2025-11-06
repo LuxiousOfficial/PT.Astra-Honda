@@ -24,16 +24,16 @@ class SearchController extends Controller
         return view('/search', ['searches' => Search::filter(request(['search']))->latest('id')->paginate(12)]);
     }
 
-    public function pelamar(Request $request) {
+    public function candidates(Request $request) {
         if($request->has('search')) {
-            $search = Pelamar::where('namalengkap','LIKE', '%' .$request->search. '%')
+            $search = User::where('namalengkap','LIKE', '%' .$request->search. '%')
             ->orWhere('jabatan','LIKE', '%' .$request->search. '%')->get();
         }
         else{
-            $search = Pelamar::latest('id')->get();
+            $search = User::latest('id')->get();
         }
 
-        return view('/dashboardhrdastrahonda/pelamar/index', ['pelamars' => Pelamar::latest('id')->filter(request(['search']))->paginate(8)]);
+        return view('/dashboardhrdastrahonda/candidates/index', ['users' => User::latest('id')->filter(request(['search']))->paginate(8)]);
     }
 
     public function service(Request $request) {

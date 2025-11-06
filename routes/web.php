@@ -1,10 +1,9 @@
 <?php
 
+use App\Http\Controllers\CandidateController;
 use App\Models\Karir;
 use App\Models\Dealer;
-use App\Models\Kredit;
 use App\Models\Release;
-use App\Models\Service;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\KarirController;
@@ -12,7 +11,6 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DealerController;
 use App\Http\Controllers\KreditController;
 use App\Http\Controllers\SearchController;
-use App\Http\Controllers\PelamarController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\DashboardController;
@@ -205,8 +203,6 @@ Route::get('/karirs/{karir:slug}', function (Karir $karir) {
 
 Route::get('/astra', function() { return view('astra.index');})->middleware('can:index');
 
-Route::resource('/astra/pelamar', PelamarController::class)->middleware('auth');
-
 Route::resource('/astra/service', ServiceController::class)->middleware('guest');
 
 Route::resource('/astra/kredit', KreditController::class)->middleware('guest');
@@ -252,8 +248,8 @@ Route::get('/dashboardhrdastrahonda/dealer/', [SearchController::class, 'dealer'
 Route::resource('/dashboardhrdastrahonda/karir', KarirController::class)->middleware(['auth', 'Admin']);
 Route::get('/dashboardhrdastrahonda/karir/', [SearchController::class, 'karir'])->middleware(['auth', 'Admin']);
 
-Route::resource('/dashboardhrdastrahonda/pelamar', HrdPelamarController::class)->middleware(['auth', 'Admin']);
-Route::get('/dashboardhrdastrahonda/pelamar/', [SearchController::class, 'pelamar'])->middleware(['auth', 'Admin']);
+Route::resource('/dashboardhrdastrahonda/candidates', CandidateController::class)->middleware(['auth', 'Admin']);
+Route::get('/dashboardhrdastrahonda/candidates/', [SearchController::class, 'candidates'])->middleware(['auth', 'Admin']);
 
 Route::resource('/dashboardhrdastrahonda/user', UserController::class)->middleware(['auth', 'Developer']);
 Route::get('/dashboardhrdastrahonda/user/', [SearchController::class, 'user'])->middleware(['auth', 'Developer']);
