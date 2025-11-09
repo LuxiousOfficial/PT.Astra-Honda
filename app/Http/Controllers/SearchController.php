@@ -24,17 +24,17 @@ class SearchController extends Controller
         return view('/search', ['searches' => Search::filter(request(['search']))->latest('id')->paginate(12)]);
     }
 
-    public function candidates(Request $request) {
-        if($request->has('search')) {
-            $search = User::where('namalengkap','LIKE', '%' .$request->search. '%')
-            ->orWhere('jabatan','LIKE', '%' .$request->search. '%')->get();
-        }
-        else{
-            $search = User::latest('id')->get();
-        }
+    // public function candidates(Request $request) {
+    //     if($request->has('search')) {
+    //         $search = User::where('namalengkap','LIKE', '%' .$request->search. '%')
+    //         ->orWhere('jabatan','LIKE', '%' .$request->search. '%')->get();
+    //     }
+    //     else{
+    //         $search = User::latest('id')->get();
+    //     }
 
-        return view('/dashboardhrdastrahonda/candidates/index', ['users' => User::latest('id')->filter(request(['search']))->paginate(8)]);
-    }
+    //     return view('/dashboardhrdastrahonda/candidates/index', ['users' => User::latest('id')->filter(request(['search']))->paginate(8)]);
+    // }
 
     public function service(Request $request) {
         if($request->has('search')) {

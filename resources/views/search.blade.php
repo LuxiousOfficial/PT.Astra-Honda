@@ -5,8 +5,8 @@
      <section class="home-pressrelease">
        <div class="container">
          <div class="row mt-4">
-           @foreach ($searches as $search)
-          <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-6 col-6 text-capitalize my-3">
+           @forelse ($searches as $search)
+           <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-6 col-6 text-capitalize my-3">
             <div class="card shadow">
               <img src="{{ $search['image'] }}" class="card-img-top rounded-3">
               <div class="card-body text-capitalize text-center" style="background-color: whitesmoke; border-radius: 1rem;">
@@ -24,8 +24,10 @@
                 <a href="{{ $search['slug'] }}" class="btn btn-danger d-flex justify-content-center fw-bold fs-6">selengkapnya</a>
               </div>
             </div>
-          </div>
-          @endforeach
+           </div>
+           @empty
+            <h1 class="d-flex justify-content-center aling-items-center text-danger fw-bold">Data Not Found</h1>
+           @endforelse
         </div>
       </div>
     </section>

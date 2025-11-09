@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Profile;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
@@ -52,7 +53,7 @@ class CandidateController extends Controller
     public function show(User $user)
     {
         Gate::authorize('developer', $user);
-        return view('dashboardhrdastrahonda/candiates/show', [
+        return view('dashboardhrdastrahonda.candidates.show', [
             'user' => $user
         ]);
     }

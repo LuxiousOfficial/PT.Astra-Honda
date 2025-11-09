@@ -18,7 +18,7 @@ class Developer
     {
         if (Auth::user()->is_developer != 1) {
             // return response()->json('Opps! You do not have permission to access.');
-            return redirect('/astra/pelamar/create');
+            return redirect('/user');
             // return abort(403);
         }
         return $next($request);
