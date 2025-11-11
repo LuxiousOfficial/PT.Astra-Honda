@@ -134,7 +134,7 @@
                 </g>
               </svg>
             </div>
-            <span class="nav-link-text ms-1 fw-bold">Candidates</span>
+            <span class="nav-link-text ms-1 fw-bold">Users</span>
           </a>
         </li>
         @endcan

@@ -23,6 +23,7 @@ use App\Http\Controllers\HrdServiceController;
 use App\Http\Controllers\RegistrasiController;
 use App\Http\Controllers\ResetPasswordController;
 use App\Http\Controllers\ForgotPasswordController;
+use App\Http\Controllers\HrdPositionController;
 use App\Http\Controllers\PositionController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SkillController;
@@ -185,7 +186,8 @@ Route::get('/dealer', function () {
 
 Route::get('/releases', function () {
     // $releases = Release::latest()->paginate(5);
-    return view('releases', ['releases' => Release::filter(request(['search']))->latest('id')->paginate(9)]);
+    return view('releases', ['releases' => Release::filter(request(['search']))->latest('id')->paginate(9)
+    ->withQueryString()]);
 });
 
 Route::get('/releases/{release:slug}', function (Release $release) {

@@ -17,11 +17,6 @@ class Karir extends Model
         $query->where('jabatan', 'like', '%' . request('search') . '%');
     }
 
-    public function pelamars(): HasMany
-    {
-        return $this->hasMany(Pelamar::class, 'jabatan_id');
-    }
-
     public function position(): HasMany
     {
         return $this->hasMany(Position::class);

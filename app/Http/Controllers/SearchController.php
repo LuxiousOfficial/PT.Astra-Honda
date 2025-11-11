@@ -8,6 +8,7 @@ use App\Models\Dealer;
 use App\Models\Kredit;
 use App\Models\Search;
 use App\Models\Pelamar;
+use App\Models\Position;
 use App\Models\Service;
 use Illuminate\Http\Request;
 
@@ -21,20 +22,8 @@ class SearchController extends Controller
             $search = Search::all();
         }
 
-        return view('/search', ['searches' => Search::filter(request(['search']))->latest('id')->paginate(12)]);
+        return view('/search', ['searches' => Search::filter(request(['search']))->latest('id')->paginate(12)->withQueryString()]);
     }
-
-    // public function candidates(Request $request) {
-    //     if($request->has('search')) {
-    //         $search = User::where('namalengkap','LIKE', '%' .$request->search. '%')
-    //         ->orWhere('jabatan','LIKE', '%' .$request->search. '%')->get();
-    //     }
-    //     else{
-    //         $search = User::latest('id')->get();
-    //     }
-
-    //     return view('/dashboardhrdastrahonda/candidates/index', ['users' => User::latest('id')->filter(request(['search']))->paginate(8)]);
-    // }
 
     public function service(Request $request) {
         if($request->has('search')) {
