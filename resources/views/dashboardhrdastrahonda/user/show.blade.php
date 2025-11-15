@@ -333,7 +333,7 @@
                </div>
 
                <div class="col-md-12 col-12 bg-white rounded-3 py-4 px-4 mt-3 mb-3">
-                <h2 class="fw-bold my-2 text-center">Data Profile</h2>
+                <h2 class="fw-bold my-2 text-center">Data File</h2>
                 <div class="table-responsive col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12 small shadow-3">
                     <table class="table table-sm text-center">
                       <thead>
