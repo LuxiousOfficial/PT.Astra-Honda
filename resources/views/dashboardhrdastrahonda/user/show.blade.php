@@ -54,13 +54,13 @@
                       <tbody>
                         <tr>
                             <td style="color: black"> <span style="font-weight: bold">
-                                {{ $user->profile->name }}
+                                {{ $user->profile ? $user->profile->name : '-' }}
                             </td>
                             <td style="color: black"> <span style="font-weight: bold"> 
-                                {{ $user->profile->email }}
+                                {{ $user->profile ? $user->profile->email: '-' }}
                             </td>
                             <td style="color: black"> <span style="font-weight: bold"> 
-                                {{ $user->profile->nik }}
+                                {{ $user->profile ? $user->profile->nik  : '-'}}
                             </td>
                         </tr>
                         <thead>
@@ -72,13 +72,13 @@
                         </thead>
                         <tr>
                             <td style="color: black"> <span style="font-weight: bold">
-                                {{ $user->profile->gender }}
+                                {{ $user->profile ? $user->profile->gender : '-' }}
                             </td>
                             <td style="color: black"> <span style="font-weight: bold"> 
-                                {{ $user->profile->place_of_birth }}
+                                {{ $user->profile ? $user->profile->place_of_birth : '-' }}
                             </td>
                             <td style="color: black"><span style="font-weight: bold">
-                                {{ $user->profile->date_of_birth }}
+                                {{ $user->profile ? $user->profile->date_of_birth : '-' }}
                             </td>
                         </tr>
                         <thead>
@@ -90,13 +90,13 @@
                         </thead>
                         <tr>
                             <td style="color: black"><span style="font-weight: bold">
-                                {{ $user->profile->address }}
+                                {{ $user->profile ? $user->profile->address : '-' }}
                             </td>
                             <td style="color: black"><span style="font-weight: bold">
-                                {{ $user->profile->phone_number }}
+                                {{ $user->profile ? $user->profile->phone_number : '-' }}
                             </td>
                             <td style="color: black"><span style="font-weight: bold"> 
-                                {{ $user->profile->religion }}
+                                {{ $user->profile ? $user->profile->religion : '-' }}
                             </td>
                         </tr>
                         <thead>
@@ -106,7 +106,7 @@
                         </thead>
                         <tr>
                             <td style="color: black"><span style="font-weight: bold">
-                                {{ $user->profile->status }}    
+                                {{ $user->profile ? $user->profile->status : '-' }}    
                             </td>
                         </tr>
                       </tbody>
@@ -128,13 +128,13 @@
                       <tbody>
                         <tr>
                             <td style="color: black"> <span style="font-weight: bold">
-                                {{ $user->education->university }}
+                                {{ $user->education ? $user->education->university : '-' }}
                             </td>
                             <td style="color: black"> <span style="font-weight: bold"> 
-                                {{ $user->education->faculty }}
+                                {{ $user->education ? $user->education->faculty : '-' }}
                             </td>
                             <td style="color: black"> <span style="font-weight: bold">
-                                {{ $user->education->institution }}
+                                {{ $user->education ? $user->education->institution : '-' }}
                             </td>
                         </tr>
                         <thead>
@@ -146,13 +146,13 @@
                         </thead>
                         <tr>
                             <td style="color: black"> <span style="font-weight: bold"> 
-                                {{ $user->education->major }}
+                                {{ $user->education ? $user->education->major : '-' }}
                             </td>
                             <td style="color: black"> <span style="font-weight: bold"> 
-                                {{ $user->education->entry_year }}
+                                {{ $user->education ? $user->education->entry_year : '-' }}
                             </td>
                             <td style="color: black"><span style="font-weight: bold">
-                                {{ $user->education->graduate }}
+                                {{ $user->education ? $user->education->graduate : '-' }}
                             </td>
                         </tr>
                         <thead>
@@ -162,7 +162,7 @@
                         </thead>
                         <tr>
                             <td style="color: black"><span style="font-weight: bold">IPK 
-                                {{ $user->education->ipk }}
+                                {{ $user->education ? $user->education->ipk : '-' }}
                             </td>
                         </tr>
                       </tbody>
@@ -184,13 +184,13 @@
                       <tbody>
                         <tr>
                             <td style="color: black"> <span style="font-weight: bold">
-                                {{ $user->experience->company }}
+                                {{ $user->experience ? $user->experience->company : '-' }}
                             </td>
                             <td style="color: black"> <span style="font-weight: bold"> 
-                                {{ $user->experience->position }}
+                                {{ $user->experience ? $user->experience->position : '-' }}
                             </td>
                             <td style="color: black"> <span style="font-weight: bold">
-                                {{ $user->experience->entry_year }}
+                                {{ $user->experience ? $user->experience->entry_year : '-' }}
                             </td>
                         </tr>
                         <thead>
@@ -202,13 +202,13 @@
                         </thead>
                         <tr>
                             <td style="color: black"> <span style="font-weight: bold"> 
-                                {{ $user->experience->year_stopped }}
+                                {{ $user->experience ? $user->experience->year_stopped : '-' }}
                             </td>
                             <td style="color: black"> <span style="font-weight: bold"> 
-                                {{ $user->experience->salary }}
+                                {{ $user->experience ? $user->experience->salary : '-' }}
                             </td>
                             <td style="color: black"><span style="font-weight: bold">
-                                {{ $user->experience->industry }}
+                                {{ $user->experience ? $user->experience->industry : '-' }}
                             </td>
                         </tr>
                         <thead>
@@ -219,10 +219,10 @@
                         </thead>
                         <tr>
                             <td style="color: black"><span style="font-weight: bold"> 
-                                {{ $user->experience->facility }}
+                                {{ $user->experience ? $user->experience->facility : '-' }}
                             </td>
                             <td style="color: black"><span style="font-weight: bold">
-                                {{ $user->experience->reason_to_stop }}
+                                {{ $user->experience ? $user->experience->reason_to_stop : '-' }}
                             </td>
                         </tr>
                       </tbody>
@@ -244,13 +244,13 @@
                       <tbody>
                         <tr>
                             <td style="color: black"> <span style="font-weight: bold">
-                                {{ $user->skill->first_skill }}
+                                {{ $user->skill ? $user->skill->first_skill : '-' }}
                             </td>
                             <td style="color: black"> <span style="font-weight: bold"> 
-                                {{ $user->skill->first_rate }}
+                                {{ $user->skill ? $user->skill->first_rate : '-' }}
                             </td>
                             <td style="color: black"> <span style="font-weight: bold">
-                                {{ $user->skill->second_skill }}
+                                {{ $user->skill ? $user->skill->second_skill : '-' }}
                             </td>
                         </tr>
                         <thead>
@@ -262,13 +262,13 @@
                         </thead>
                         <tr>
                             <td style="color: black"> <span style="font-weight: bold"> 
-                                {{ $user->skill->second_rate }}
+                                {{ $user->skill ? $user->skill->second_rate : '-' }}
                             </td>
                             <td style="color: black"> <span style="font-weight: bold"> 
-                                {{ $user->skill->third_skill }}
+                                {{ $user->skill ? $user->skill->third_skill : '-' }}
                             </td>
                             <td style="color: black"><span style="font-weight: bold">
-                                {{ $user->skill->third_rate }}
+                                {{ $user->skill ? $user->skill->third_rate : '-' }}
                             </td>
                         </tr>
                         <thead>
@@ -280,13 +280,13 @@
                         </thead>
                         <tr>
                             <td style="color: black"><span style="font-weight: bold"> 
-                                {{ $user->skill->fourth_skill }}
+                                {{ $user->skill ? $user->skill->fourth_skill : '-' }}
                             </td>
                             <td style="color: black"><span style="font-weight: bold">
-                                {{ $user->skill->fourth_rate }}
+                                {{ $user->skill ? $user->skill->fourth_rate : '-' }}
                             </td>
                             <td style="color: black"><span style="font-weight: bold">
-                                {{ $user->skill->fifth_skill }}
+                                {{ $user->skill ? $user->skill->fifth_skill : '-' }}
                             </td>
                         </tr>
                         <thead>
@@ -296,7 +296,7 @@
                         </thead>
                         <tr>
                             <td style="color: black"><span style="font-weight: bold"> 
-                                {{ $user->skill->fifth_rate }}
+                                {{ $user->skill ? $user->skill->fifth_rate : '-' }}
                             </td>
                         </tr>
                       </tbody>
@@ -318,13 +318,13 @@
                         <tbody>
                             <tr>
                                 <td style="color: black"> <span style="font-weight: bold">
-                                    {{ $user->position->karir->jabatan }}
+                                    {{ $user->position ? $user->position->karir->jabatan : '-' }}
                                 </td>
                                 <td style="color: black"> <span style="font-weight: bold"> 
-                                    {{ $user->position->salary }}
+                                    {{ $user->position ? $user->position->salary : '-' }}
                                 </td>
                                 <td style="color: black"> <span style="font-weight: bold">
-                                    {{ $user->position->join }}
+                                    {{ $user->position ? $user->position->join : '-' }}
                                 </td>
                             </tr>
                         </tbody>
@@ -346,13 +346,13 @@
                     <tbody>
                       <tr>
                           <td style="color: black"> <span style="font-weight: bold">
-                              {{ $user->file->pasphoto }}
+                              {{ $user->file ? $user->file->pasphoto : '-' }}
                           </td>
                           <td style="color: black"> <span style="font-weight: bold"> 
-                              {{ $user->file->cv }}
+                              {{ $user->file ? $user->file->cv : '-' }}
                           </td>
                           <td style="color: black"> <span style="font-weight: bold"> 
-                              {{ $user->file->ktp }}
+                              {{ $user->file ? $user->file->ktp : '-' }}
                           </td>
                       </tr>
                       <thead>
@@ -364,13 +364,13 @@
                       </thead>
                       <tr>
                           <td style="color: black"> <span style="font-weight: bold">
-                              {{ $user->file->kk }}
+                              {{ $user->file ? $user->file->kk : '-' }}
                           </td>
                           <td style="color: black"> <span style="font-weight: bold"> 
-                              {{ $user->file->ijazah }}
+                              {{ $user->file ? $user->file->ijazah : '-' }}
                           </td>
                           <td style="color: black"><span style="font-weight: bold">
-                              {{ $user->file->transkrip_nilai }}
+                              {{ $user->file ? $user->file->transkrip_nilai : '-' }}
                           </td>
                       </tr>
                       <thead>
@@ -380,7 +380,7 @@
                       </thead>
                       <tr>
                           <td style="color: black"><span style="font-weight: bold">
-                              {{ $user->file->skck }}
+                              {{ $user->file ? $user->file->skck : '-' }}
                           </td>
                       </tr>
                     </tbody>

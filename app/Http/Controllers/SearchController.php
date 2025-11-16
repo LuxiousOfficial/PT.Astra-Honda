@@ -8,9 +8,10 @@ use App\Models\Dealer;
 use App\Models\Kredit;
 use App\Models\Search;
 use App\Models\Pelamar;
-use App\Models\Position;
 use App\Models\Service;
+use App\Models\Position;
 use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Builder;
 
 class SearchController extends Controller
 {

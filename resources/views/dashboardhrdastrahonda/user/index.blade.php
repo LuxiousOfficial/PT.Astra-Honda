@@ -39,6 +39,7 @@
             <th scope="col">No</th>
             <th scope="col">Action</th>
             <th scope="col">Created at</th>
+            <th scope="col">Position</th>
             <th scope="col">Nama</th>
             <th scope="col">Email</th>
             <th scope="col">Password</th>
@@ -60,6 +61,7 @@
             </form>
           </td>
           <td>{{$user->created_at->format("j-m-Y H:i:s")}}</td>
+          <td>{{ $user->position ? $user->position->karir->jabatan : '-' }}</td>
           <td>{{ $user->name }}</td>
           <td>{{ $user->email }}</td>
           <td>{{ $user->password }}</td>
