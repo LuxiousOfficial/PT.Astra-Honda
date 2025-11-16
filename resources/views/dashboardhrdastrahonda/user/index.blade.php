@@ -59,14 +59,14 @@
               @csrf
               <button class="btn bg-danger px-3 fw-bold border-0 text-white" onclick="return confirm('Apa kamu yakin mau menghapus data ini?')">Delete</button>
             </form>
-          </td>
-          <td>{{$user->created_at->format("j-m-Y H:i:s")}}</td>
-          <td>{{ $user->position ? $user->position->karir->jabatan : '-' }}</td>
-          <td>{{ $user->name }}</td>
-          <td>{{ $user->email }}</td>
-          <td>{{ $user->password }}</td>
-          <td>{{ $user->is_admin }}</td>
-          <td>{{ $user->is_developer }}</td>
+          </td> 
+          <td style="color: black;">{{$user->created_at->format("j-m-Y H:i:s")}}</td>
+          <td style="color: black;">{{ $user->position ? $user->position->karir->jabatan : '-' }}</td>
+          <td style="color: black;">{{ $user->name }}</td>
+          <td style="color: black;">{{ $user->email }}</td>
+          <td style="color: black;">{{ $user->password }}</td>
+          <td style="color: black;">{{ $user->is_admin }}</td>
+          <td style="color: black;">{{ $user->is_developer }}</td>
         </tr>
         @endforeach
         </tbody>

@@ -64,18 +64,18 @@
                 <button class="btn bg-danger px-3 fw-bold border-0 text-white" onclick="return confirm('Apa kamu yakin mau menghapus data ini?')">Delete</button>
               </form>
             </td>
-            <td>{{$kredit->created_at->format("j-m-Y H:i:s")}}</td>
-            <td>{{ $kredit->nama }}</td>
-            <td>{{ $kredit->email }}</td>
-            <td>{{ $kredit->nohp }}</td>
-            <td>{{ $kredit->alamat }}</td>
-            <td>{{ $kredit->provinsi }}</td>
-            <td>{{ $kredit->kota }}</td>
-            <td>{{ $kredit->dp }}</td>
-            <td>{{ $kredit->jumlahtenor }}</td>
-            <td>{{ $kredit->varianmotor }}</td>
-            <td>{{ $kredit->rencanapembelian }}</td>
-            <td>{{ $kredit->pesan }}</td>
+            <td style="color: black;">{{$kredit->created_at->format("j-m-Y H:i:s")}}</td>
+            <td style="color: black;">{{ $kredit->nama }}</td>
+            <td style="color: black;">{{ $kredit->email }}</td>
+            <td style="color: black;">{{ $kredit->nohp }}</td>
+            <td style="color: black;">{{ $kredit->alamat }}</td>
+            <td style="color: black;">{{ $kredit->provinsi }}</td>
+            <td style="color: black;">{{ $kredit->kota }}</td>
+            <td style="color: black;">{{ $kredit->dp }}</td>
+            <td style="color: black;">{{ $kredit->jumlahtenor }}</td>
+            <td style="color: black;">{{ $kredit->varianmotor }}</td>
+            <td style="color: black;">{{ $kredit->rencanapembelian }}</td>
+            <td style="color: black;">{{ $kredit->pesan }}</td>
           </tr>
           @endforeach
           </tbody>

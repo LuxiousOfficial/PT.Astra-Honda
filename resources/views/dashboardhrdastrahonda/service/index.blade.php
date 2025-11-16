@@ -64,18 +64,18 @@
                   <button class="btn bg-danger px-3 fw-bold border-0 text-white" onclick="return confirm('Apa kamu yakin mau menghapus data ini?')">Delete</button>
                 </form>
               </td>
-              <td>{{$service->created_at->format("j-m-Y H:i:s")}}</td>
-              <td>{{ $service->nama }}</td>
-              <td>{{ $service->email }}</td>
-              <td>{{ $service->nohp }}</td>
-              <td>{{ $service->alamat }}</td>
-              <td>{{ $service->provinsi }}</td>
-              <td>{{ $service->kota }}</td>
-              <td>{{ $service->varianmotor }}</td>
-              <td>{{ $service->tahunpembuatan }}</td>
-              <td>{{ $service->jenisservice }}</td>
-              <td>{{ $service->jadwal }}</td>
-              <td>{{ $service->jam }}</td>
+              <td style="color: black;">{{$service->created_at->format("j-m-Y H:i:s")}}</td>
+              <td style="color: black;">{{ $service->nama }}</td>
+              <td style="color: black;">{{ $service->email }}</td>
+              <td style="color: black;">{{ $service->nohp }}</td>
+              <td style="color: black;">{{ $service->alamat }}</td>
+              <td style="color: black;">{{ $service->provinsi }}</td>
+              <td style="color: black;">{{ $service->kota }}</td>
+              <td style="color: black;">{{ $service->varianmotor }}</td>
+              <td style="color: black;">{{ $service->tahunpembuatan }}</td>
+              <td style="color: black;">{{ $service->jenisservice }}</td>
+              <td style="color: black;">{{ $service->jadwal }}</td>
+              <td style="color: black;">{{ $service->jam }}</td>
             </tr>
             @endforeach
             </tbody>

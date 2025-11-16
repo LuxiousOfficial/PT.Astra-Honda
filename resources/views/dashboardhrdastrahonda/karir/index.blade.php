@@ -61,15 +61,15 @@
               <button class="btn bg-danger px-3 fw-bold border-0 text-white" onclick="return confirm('Apa kamu yakin mau menghapus data ini?')">Delete</button>
             </form>
           </td>
-          <td>{{ $karir->jabatan }}</td>
-          <td>{{ $karir->jeniskelamin }}</td>
-          <td>{{ $karir->pendidikan }}</td>
-          <td>{{ $karir->pengalaman }}</td>
-          <td>{{ $karir->keahlian }}</td>
-          <td>{{ $karir->kerjasama }}</td>
-          <td>{{ $karir->vaksin }}</td>
-          <td>{{ $karir->lokasi }}</td>
-          <td>{{ $karir->link }}</td>
+          <td style="color: black;">{{ $karir->jabatan }}</td>
+          <td style="color: black;">{{ $karir->jeniskelamin }}</td>
+          <td style="color: black;">{{ $karir->pendidikan }}</td>
+          <td style="color: black;">{{ $karir->pengalaman }}</td>
+          <td style="color: black;">{{ $karir->keahlian }}</td>
+          <td style="color: black;">{{ $karir->kerjasama }}</td>
+          <td style="color: black;">{{ $karir->vaksin }}</td>
+          <td style="color: black;">{{ $karir->lokasi }}</td>
+          <td style="color: black;">{{ $karir->link }}</td>
         </tr>
         @endforeach
         </tbody>

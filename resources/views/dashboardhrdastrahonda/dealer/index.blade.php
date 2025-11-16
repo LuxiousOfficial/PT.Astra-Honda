@@ -56,10 +56,10 @@
                 <button class="btn bg-danger px-3 fw-bold border-0 text-white" onclick="return confirm('Apa kamu yakin mau menghapus data ini?')">Delete</button>
               </form>
             </td>
-            <td>{{$dealer->created_at->format("j-m-Y H:i:s")}}</td>
-            <td>{{ $dealer->nama }}</td>
-            <td>{{ $dealer->alamat }}</td>
-            <td>{{ $dealer->telepon }}</td>
+            <td style="color: black;">{{$dealer->created_at->format("j-m-Y H:i:s")}}</td>
+            <td style="color: black;">{{ $dealer->nama }}</td>
+            <td style="color: black;">{{ $dealer->alamat }}</td>
+            <td style="color: black;">{{ $dealer->telepon }}</td>
           </tr>
           @endforeach
           </tbody>
