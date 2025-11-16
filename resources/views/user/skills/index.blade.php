@@ -54,17 +54,17 @@
                       <button class="btn btn-danger px-3 fw-bold border-0" onclick="return confirm('Apa kamu yakin mau menghapus data ini?')">Delete</button>
                     </form>
                   </td>
-                  <td>{{$skill->created_at->format("j-m-Y H:i:s")}}</td>
-                  <td>{{ $skill->first_skill }}</td>
-                  <td>{{ $skill->first_rate }}</td>
-                  <td>{{ $skill->second_skill }}</td>
-                  <td>{{ $skill->second_rate }}</td>
-                  <td>{{ $skill->third_skill }}</td>
-                  <td>{{ $skill->third_rate }}</td>
-                  <td>{{ $skill->fourth_skill }}</td>
-                  <td>{{ $skill->fourth_rate }}</td>
-                  <td>{{ $skill->fifth_skill }}</td>
-                  <td>{{ $skill->fifth_rate }}</td>
+                  <td style="color: black;">{{$skill->created_at->format("j-m-Y H:i:s")}}</td>
+                  <td style="color: black;">{{ $skill->first_skill }}</td>
+                  <td style="color: black;">{{ $skill->first_rate }}</td>
+                  <td style="color: black;">{{ $skill->second_skill }}</td>
+                  <td style="color: black;">{{ $skill->second_rate }}</td>
+                  <td style="color: black;">{{ $skill->third_skill }}</td>
+                  <td style="color: black;">{{ $skill->third_rate }}</td>
+                  <td style="color: black;">{{ $skill->fourth_skill }}</td>
+                  <td style="color: black;">{{ $skill->fourth_rate }}</td>
+                  <td style="color: black;">{{ $skill->fifth_skill }}</td>
+                  <td style="color: black;">{{ $skill->fifth_rate }}</td>
                 </tr>
               @endforeach
             </tbody>

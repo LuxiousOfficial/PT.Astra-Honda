@@ -54,17 +54,17 @@
                       <button class="btn btn-danger px-3 fw-bold border-0" onclick="return confirm('Apa kamu yakin mau menghapus data ini?')">Delete</button>
                     </form>
                   </td>
-                  <td>{{$profile->created_at->format("j-m-Y H:i:s")}}</td>
-                  <td>{{ $profile->name }}</td>
-                  <td>{{ $profile->email }}</td>
-                  <td>{{ $profile->nik }}</td>
-                  <td>{{ $profile->gender }}</td>
-                  <td>{{ $profile->place_of_birth }}</td>
-                  <td>{{ $profile->date_of_birth }}</td>
-                  <td>{{ $profile->address }}</td>
-                  <td>{{ $profile->phone_number }}</td>
-                  <td>{{ $profile->religion }}</td>
-                  <td>{{ $profile->status }}</td>
+                  <td style="color: black;">{{$profile->created_at->format("j-m-Y H:i:s")}}</td>
+                  <td style="color: black;">{{ $profile->name }}</td>
+                  <td style="color: black;">{{ $profile->email }}</td>
+                  <td style="color: black;">{{ $profile->nik }}</td>
+                  <td style="color: black;">{{ $profile->gender }}</td>
+                  <td style="color: black;">{{ $profile->place_of_birth }}</td>
+                  <td style="color: black;">{{ $profile->date_of_birth }}</td>
+                  <td style="color: black;">{{ $profile->address }}</td>
+                  <td style="color: black;">{{ $profile->phone_number }}</td>
+                  <td style="color: black;">{{ $profile->religion }}</td>
+                  <td style="color: black;">{{ $profile->status }}</td>
                 </tr>
               @endforeach
             </tbody>

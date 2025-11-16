@@ -53,14 +53,14 @@
                   </form>
                   @endcan
                 </td>
-                 <td>{{$file->created_at->format("j-m-Y H:i:s")}}</td>
-                <td>{{ $file->pasphoto }}</td>
-                <td>{{ $file->cv }}</td>
-                <td>{{ $file->ktp }}</td>
-                <td>{{ $file->kk }}</td>
-                <td>{{ $file->ijazah }}</td>
-                <td>{{ $file->transkrip_nilai }}</td>
-                <td>{{ $file->skck }}</td>
+                <td style="color: black;">{{$file->created_at->format("j-m-Y H:i:s")}}</td>
+                <td style="color: black;">{{ $file->pasphoto }}</td>
+                <td style="color: black;">{{ $file->cv }}</td>
+                <td style="color: black;">{{ $file->ktp }}</td>
+                <td style="color: black;">{{ $file->kk }}</td>
+                <td style="color: black;">{{ $file->ijazah }}</td>
+                <td style="color: black;">{{ $file->transkrip_nilai }}</td>
+                <td style="color: black;">{{ $file->skck }}</td>
               </tr>
             @endforeach
           </tbody>

@@ -52,15 +52,15 @@
                       <button class="btn btn-danger px-3 fw-bold border-0" onclick="return confirm('Apa kamu yakin mau menghapus data ini?')">Delete</button>
                     </form>
                   </td>
-                  <td>{{$experience->created_at->format("j-m-Y H:i:s")}}</td>
-                  <td>{{ $experience->company }}</td>
-                  <td>{{ $experience->position }}</td>
-                  <td>{{ $experience->entry_year }}</td>
-                  <td>{{ $experience->year_stopped }}</td>
-                  <td>{{ $experience->salary }}</td>
-                  <td>{{ $experience->industry }}</td>
-                  <td>{{ $experience->facility }}</td>
-                  <td>{{ $experience->reason_to_stop }}</td>
+                  <td style="color: black;">{{$experience->created_at->format("j-m-Y H:i:s")}}</td>
+                  <td style="color: black;">{{ $experience->company }}</td>
+                  <td style="color: black;">{{ $experience->position }}</td>
+                  <td style="color: black;">{{ $experience->entry_year }}</td>
+                  <td style="color: black;">{{ $experience->year_stopped }}</td>
+                  <td style="color: black;">{{ $experience->salary }}</td>
+                  <td style="color: black;">{{ $experience->industry }}</td>
+                  <td style="color: black;">{{ $experience->facility }}</td>
+                  <td style="color: black;">{{ $experience->reason_to_stop }}</td>
                 </tr>
               @endforeach
             </tbody>

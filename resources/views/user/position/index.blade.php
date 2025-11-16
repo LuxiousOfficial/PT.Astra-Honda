@@ -47,10 +47,10 @@
                       <button class="btn btn-danger px-3 fw-bold border-0" onclick="return confirm('Apa kamu yakin mau menghapus data ini?')">Delete</button>
                     </form>
                   </td>
-                  <td>{{$position->created_at->format("j-m-Y H:i:s")}}</td>
-                  <td>{{ $position->karir->jabatan }}</td>
-                  <td>{{ $position->salary }}</td>
-                  <td>{{ $position->join }}</td>
+                  <td style="color: black;">{{$position->created_at->format("j-m-Y H:i:s")}}</td>
+                  <td style="color: black;">{{ $position->karir->jabatan }}</td>
+                  <td style="color: black;">{{ $position->salary }}</td>
+                  <td style="color: black;">{{ $position->join }}</td>
                 </tr>
               @endforeach
             </tbody>

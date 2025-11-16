@@ -51,14 +51,14 @@
                       <button class="btn btn-danger px-3 fw-bold border-0" onclick="return confirm('Apa kamu yakin mau menghapus data ini?')">Delete</button>
                     </form>
                   </td>
-                  <td>{{$education->created_at->format("j-m-Y H:i:s")}}</td>
-                  <td>{{ $education->university }}</td>
-                  <td>{{ $education->faculty }}</td>
-                  <td>{{ $education->institution }}</td>
-                  <td>{{ $education->major }}</td>
-                  <td>{{ $education->entry_year }}</td>
-                  <td>{{ $education->graduate }}</td>
-                  <td>{{ $education->ipk }}</td>
+                  <td style="color: black;">{{$education->created_at->format("j-m-Y H:i:s")}}</td>
+                  <td style="color: black;">{{ $education->university }}</td>
+                  <td style="color: black;">{{ $education->faculty }}</td>
+                  <td style="color: black;">{{ $education->institution }}</td>
+                  <td style="color: black;">{{ $education->major }}</td>
+                  <td style="color: black;">{{ $education->entry_year }}</td>
+                  <td style="color: black;">{{ $education->graduate }}</td>
+                  <td style="color: black;">{{ $education->ipk }}</td>
                 </tr>
               @endforeach
             </tbody>
