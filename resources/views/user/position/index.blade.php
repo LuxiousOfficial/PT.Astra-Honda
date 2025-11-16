@@ -38,7 +38,7 @@
               @foreach ($positions as $position)
               <tr class="text-center text-black fw-bold">
                   <td>{{ $loop->iteration }}</td>
-                  <td class="d-flex">
+                  <td class="d-flex justify-content-center">
                     <a href="/user/position/{{ $position->id }}" class="btn btn-info px-3 fw-bold border-0">Details</a>
                     <a href="/user/position/{{ $position->id }}/edit" class="btn btn-warning px-3 fw-bold border-0 mx-2">Edit</a>
                     <form method="post" action="/user/position/{{ $position->id }}">
