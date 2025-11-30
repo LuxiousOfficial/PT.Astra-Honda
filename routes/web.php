@@ -250,6 +250,9 @@ Route::get('/dashboardhrdastrahonda/dealer/', [SearchController::class, 'dealer'
 Route::resource('/dashboardhrdastrahonda/karir', KarirController::class)->middleware(['auth', 'Admin']);
 Route::get('/dashboardhrdastrahonda/karir/', [SearchController::class, 'karir'])->middleware(['auth', 'Admin']);
 
+Route::resource('/dashboardhrdastrahonda/position', HrdPositionController::class)->middleware(['auth', 'Developer']);
+Route::get('/dashboardhrdastrahonda/position/', [SearchController::class, 'candidates'])->middleware(['auth', 'Developer']);
+
 Route::resource('/dashboardhrdastrahonda/user', UserController::class)->middleware(['auth', 'Developer']);
 Route::get('/dashboardhrdastrahonda/user/', [SearchController::class, 'user'])->middleware(['auth', 'Developer']);
 

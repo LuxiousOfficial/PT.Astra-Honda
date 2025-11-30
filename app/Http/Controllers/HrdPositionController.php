@@ -8,24 +8,24 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
 
-class PositionController extends Controller
+class HrdPositionController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('user/position/index', [
-            'positions' => Position::where('user_id', Auth::id())->get()
+        return view('/dashboardhrdastrahonda/position/index', [
+            'positions' => Position::all()
         ]);
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(Request $request)
     {
-        return view('user/position/create', [
+        return view('dashboardhrdastrahonda/position/create', [
             'karirs' => Karir::latest('id')->get()
         ]);
     }
@@ -45,7 +45,7 @@ class PositionController extends Controller
         $validatedData['user_id'] = $userId;
 
         Position::create($validatedData);
-        return redirect('user/position')->with('success', 'Data berhasil disimpan');
+        return redirect('dashboardhrdastrahonda/position')->with('success', 'Data berhasil disimpan');
     }
 
     /**
@@ -53,7 +53,7 @@ class PositionController extends Controller
      */
     public function show(Position $position)
     {
-        return view('user/position/show', [
+        return view('dashboardhrdastrahonda/position/show', [
             'position' => $position
         ]);
     }
@@ -63,7 +63,7 @@ class PositionController extends Controller
      */
     public function edit(Position $position)
     {
-        return view('user/position/edit', [
+        return view('dashboardhrdastrahonda/position/edit', [
             'position' => $position,
             'karirs' => Karir::latest('id')->get(),
             Gate::authorize('position', $position)
@@ -76,14 +76,14 @@ class PositionController extends Controller
     public function update(Request $request, Position $position)
     {
         $rules = [
-            'karir_id' => 'required|max:100',
+            'office' => 'required|max:100',
             'salary' => 'required|max:50',
             'join' => 'required|max:20'
         ];
 
         $validatedData = $request->validate($rules);
         Position::where('id', $position->id)->update($validatedData);
-        return redirect('user/position')->with('update', 'Data berhasil diubah');
+        return redirect('dashboardhrdastrahonda/position')->with('update', 'Data berhasil diubah');
     }
 
     /**
@@ -91,8 +91,7 @@ class PositionController extends Controller
      */
     public function destroy(Position $position)
     {
-        Gate::authorize('developer', $position);
         Position::destroy($position->id);
-        return redirect('/user/position')->with('success', 'Data berhasil dihapus');
+        return redirect('/dashboardhrdastrahonda/position')->with('success', 'Data berhasil dihapus');
     }
 }

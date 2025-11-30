@@ -103,6 +103,7 @@ class SkillController extends Controller
      */
     public function destroy(Skill $skill)
     {
+        Gate::authorize('developer', $skill);
         Skill::destroy($skill->id);
         return redirect('/user/skills')->with('success', 'Data berhasil dihapus');
     }

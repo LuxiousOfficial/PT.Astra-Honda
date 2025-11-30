@@ -84,4 +84,15 @@ class SearchController extends Controller
 
         return view('/dashboardhrdastrahonda/user/index', ['users' => User::latest('id')->filter(request(['search']))->get()]);
     }
+
+    public function candidates(Request $request) {
+        if($request->has('search')) {
+            $search = Position::where('office','LIKE', '%' .$request->search. '%');
+        }
+        else{
+            $search = Position::latest('id')->get();
+        }
+
+        return view('/dashboardhrdastrahonda/position/index', ['positions' => Position::latest('id')->filter(request(['search']))->get()]);
+    }
 }

@@ -100,6 +100,7 @@ class ExperienceController extends Controller
      */
     public function destroy(Experience $experience)
     {
+        Gate::authorize('developer', $experience);
         Experience::destroy($experience->id);
         return redirect('/user/experience')->with('success', 'Data berhasil dihapus');
     }

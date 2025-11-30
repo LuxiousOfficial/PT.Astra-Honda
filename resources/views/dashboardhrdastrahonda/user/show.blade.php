@@ -318,7 +318,7 @@
                         <tbody>
                             <tr>
                                 <td style="color: black"> <span style="font-weight: bold">
-                                    {{ $user->position ? $user->position->karir->jabatan : '-' }}
+                                    {{ $user->position ? $user->position->office : '-' }}
                                 </td>
                                 <td style="color: black"> <span style="font-weight: bold"> 
                                     {{ $user->position ? $user->position->salary : '-' }}

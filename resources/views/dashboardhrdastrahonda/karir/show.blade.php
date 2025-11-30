@@ -1,8 +1,8 @@
 <x-layoutdashboardahm>
-    <section class="form-pendaftaran">
+    <section class="form-pendaftaran bg-white rounded-3 p-4 mt-5">
         <div class="container">
             <div class="row text-center">
-                <div class="col-md-12 col-12 mt-5">
+                <div class="col-md-12 col-12">
                     <div class="title text-capitalize">
                         <h2 class="fs-1 fw-bold mb-4">{{ $karir->jabatan }}</h2>
                     </div>
@@ -16,44 +16,40 @@
                           </thead>
                           <tbody>
                           <tr>
-                            <td>Slug</td>
-                            <td>{{ $karir->slug }}</td>
+                            <td style="color: black"><span class="fw-bold">Jabatan</span></td>
+                            <td style="color: black">{{ $karir->jabatan }}</td>
                           </tr>
                           <tr>
-                            <td>Jabatan</td>
-                            <td>{{ $karir->jabatan }}</td>
+                            <td style="color: black"><span class="fw-bold">Jenis Kelamin</span></td>
+                            <td style="color: black">{{ $karir->jeniskelamin }}</td>
                           </tr>
                           <tr>
-                            <td>Jenis Kelamin</td>
-                            <td>{{ $karir->jeniskelamin }}</td>
+                            <td style="color: black"><span class="fw-bold">Pendidikan</span></td>
+                            <td style="color: black">{{ $karir->pendidikan }}</td>
                           </tr>
                           <tr>
-                            <td>Pendidikan</td>
-                            <td>{{ $karir->pendidikan }}</td>
+                            <td style="color: black"><span class="fw-bold">Pengalaman</span></td>
+                            <td style="color: black">{{ $karir->pengalaman }}</td>
                           </tr>
                           <tr>
-                            <td>Pengalaman</td>
-                            <td>{{ $karir->pengalaman }}</td>
+                            <td style="color: black"><span class="fw-bold">Keahlian</span></td>
+                            <td style="color: black">{{ $karir->keahlian }}</td>
                           </tr>
                           <tr>
-                            <td>Keahlian</td>
-                            <td>{{ $karir->keahlian }}</td>
+                            <td style="color: black"><span class="fw-bold">Kerjasama</span></td>
+                            <td style="color: black">{{ $karir->kerjasama }}</td>
                           </tr>
                           <tr>
-                            <td>Kerjasama</td>
-                            <td>{{ $karir->kerjasama }}</td>
+                            <td style="color: black"><span class="fw-bold">Vaksin</span></td>
+                            <td style="color: black">{{ $karir->vaksin }}</td>
                           </tr>
                           <tr>
-                            <td>Vaksin</td>
-                            <td>{{ $karir->vaksin }}</td>
+                            <td style="color: black"><span class="fw-bold">Lokasi</span></td>
+                            <td style="color: black">{{ $karir->lokasi }}</td>
                           </tr>
                           <tr>
-                            <td>Lokasi</td>
-                            <td>{{ $karir->lokasi }}</td>
-                          </tr>
-                          <tr>
-                            <td>Link</td>
-                            <td>{{ $karir->link }}</td>
+                            <td style="color: black"><span class="fw-bold">Link</span></td>
+                            <td style="color: black">{{ $karir->link }}</td>
                           </tr>
                           </tbody>
                         </table>

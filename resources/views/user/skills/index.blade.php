@@ -48,11 +48,13 @@
                   <td class="d-flex">
                     <a href="/user/skills/{{ $skill->id }}" class="btn btn-info px-3 fw-bold border-0">Details</a>
                     <a href="/user/skills/{{ $skill->id }}/edit" class="btn btn-warning px-3 fw-bold border-0 mx-2">Edit</a>
+                    @can('developer')
                     <form method="post" action="/user/skills/{{ $skill->id }}">
                       @method('delete')
                       @csrf
                       <button class="btn btn-danger px-3 fw-bold border-0" onclick="return confirm('Apa kamu yakin mau menghapus data ini?')">Delete</button>
                     </form>
+                    @endcan
                   </td>
                   <td style="color: black;">{{$skill->created_at->format("j-m-Y H:i:s")}}</td>
                   <td style="color: black;">{{ $skill->first_skill }}</td>

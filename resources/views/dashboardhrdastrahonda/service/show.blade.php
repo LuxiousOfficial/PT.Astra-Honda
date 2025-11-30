@@ -1,8 +1,8 @@
 <x-layoutdashboardahm>
-    <section class="form-pendaftaran">
+    <section class="form-pendaftaran bg-white rounded-3 p-4 mt-5">
         <div class="container">
             <div class="row text-center">
-                <div class="col-md-12 col-12 mt-5">
+                <div class="col-md-12 col-12">
                     <div class="title text-capitalize">
                         <h2 class="fs-1 fw-bold mb-4">{{ $service['nama'] }}</h2>
                     </div>
@@ -16,48 +16,48 @@
                           </thead>
                           <tbody>
                           <tr>
-                            <td>Email</td>
-                            <td>{{ $service->email }}</td>
+                            <td style="color: black"><span class="fw-bold">Email</span></td>
+                            <td style="color: black">{{ $service->email }}</td>
                           </tr>
                           <tr>
-                            <td>No HP</td>
-                            <td>{{ $service->nohp }}</td>
+                            <td style="color: black"><span class="fw-bold">No HP</span></td>
+                            <td style="color: black">{{ $service->nohp }}</td>
                           </tr>
                           <tr>
-                            <td>Alamat</td>
-                            <td>{{ $service->alamat }}</td>
+                            <td style="color: black"><span class="fw-bold">Alamat</span></td>
+                            <td style="color: black">{{ $service->alamat }}</td>
                           </tr>
                           <tr>
-                            <td>Provinsi</td>
-                            <td>{{ $service->provinsi }}</td>
+                            <td style="color: black"><span class="fw-bold">Provinsi</span></td>
+                            <td style="color: black">{{ $service->provinsi }}</td>
                           </tr>
                           <tr>
-                            <td>Kota</td>
-                            <td>{{ $service->kota }}</td>
+                            <td style="color: black"><span class="fw-bold">Kota</span></td>
+                            <td style="color: black">{{ $service->kota }}</td>
                           </tr>
                           <tr>
-                            <td>Down Payment</td>
-                            <td>{{ $service->kategorimotor }}</td>
+                            <td style="color: black"><span class="fw-bold">Down Payment</span></td>
+                            <td style="color: black">{{ $service->kategorimotor }}</td>
                           </tr>
                           <tr>
-                            <td>Jumlah Tenor</td>
-                            <td>{{ $service->varianmotor }}</td>
+                            <td style="color: black"><span class="fw-bold">Jumlah Tenor</span></td>
+                            <td style="color: black">{{ $service->varianmotor }}</td>
                           </tr>
                           <tr>
-                            <td>Kategori Motor</td>
-                            <td>{{ $service->tahunpembuatan }}</td>
+                            <td style="color: black"><span class="fw-bold">Kategori Motor</span></td>
+                            <td style="color: black">{{ $service->tahunpembuatan }}</td>
                           </tr>
                           <tr>
-                            <td>Varian Motor</td>
-                            <td>{{ $service->jenisservice }}</td>
+                            <td style="color: black"><span class="fw-bold">Varian Motor</span></td>
+                            <td style="color: black">{{ $service->jenisservice }}</td>
                           </tr>
                           <tr>
-                            <td>Rencana Pembelian</td>
-                            <td>{{ $service->jadwal }}</td>
+                            <td style="color: black"><span class="fw-bold">Rencana Pembelian</span></td>
+                            <td style="color: black">{{ $service->jadwal }}</td>
                           </tr>
                           <tr>
-                            <td>Pesan</td>
-                            <td>{{ $service->jam }}</td>
+                            <td style="color: black"><span class="fw-bold">Pesan</span></td>
+                            <td style="color: black">{{ $service->jam }}</td>
                           </tr>
                           </tbody>
                         </table>

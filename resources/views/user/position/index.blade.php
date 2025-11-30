@@ -41,14 +41,16 @@
                   <td class="d-flex justify-content-center">
                     <a href="/user/position/{{ $position->id }}" class="btn btn-info px-3 fw-bold border-0">Details</a>
                     <a href="/user/position/{{ $position->id }}/edit" class="btn btn-warning px-3 fw-bold border-0 mx-2">Edit</a>
-                    <form method="post" action="/user/position/{{ $position->id }}">
-                      @method('delete')
-                      @csrf
-                      <button class="btn btn-danger px-3 fw-bold border-0" onclick="return confirm('Apa kamu yakin mau menghapus data ini?')">Delete</button>
-                    </form>
+                   @can('developer')
+                   <form method="post" action="/user/position/{{ $position->id }}">
+                    @method('delete')
+                    @csrf
+                    <button class="btn btn-danger px-3 fw-bold border-0" onclick="return confirm('Apa kamu yakin mau menghapus data ini?')">Delete</button>
+                  </form>
+                   @endcan
                   </td>
                   <td style="color: black;">{{$position->created_at->format("j-m-Y H:i:s")}}</td>
-                  <td style="color: black;">{{ $position->karir->jabatan }}</td>
+                  <td style="color: black;">{{ $position->office }}</td>
                   <td style="color: black;">{{ $position->salary }}</td>
                   <td style="color: black;">{{ $position->join }}</td>
                 </tr>

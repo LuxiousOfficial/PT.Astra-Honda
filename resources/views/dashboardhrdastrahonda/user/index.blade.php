@@ -61,7 +61,7 @@
             </form>
           </td> 
           <td style="color: black;">{{$user->created_at->format("j-m-Y H:i:s")}}</td>
-          <td style="color: black;">{{ $user->position ? $user->position->karir->jabatan : '-' }}</td>
+          <td style="color: black;">{{ $user->position ? $user->position->office : '-' }}</td>
           <td style="color: black;">{{ $user->name }}</td>
           <td style="color: black;">{{ $user->email }}</td>
           <td style="color: black;">{{ $user->password }}</td>

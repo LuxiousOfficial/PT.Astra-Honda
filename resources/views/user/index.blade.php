@@ -297,7 +297,7 @@
                            <tbody>
                                <tr>
                                    <td style="color: black"> <span style="font-weight: bold">
-                                       {{ $position->karir->jabatan }}
+                                       {{ $position->office }}
                                    </td>
                                    <td style="color: black"> <span style="font-weight: bold"> 
                                        {{ $position->salary }}

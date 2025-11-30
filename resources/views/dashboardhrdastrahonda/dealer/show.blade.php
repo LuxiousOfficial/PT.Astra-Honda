@@ -1,8 +1,8 @@
 <x-layoutdashboardahm>
-    <section class="form-pendaftaran">
+    <section class="form-pendaftaran bg-white rounded-3 p-4 mt-5">
         <div class="container">
             <div class="row text-center">
-                <div class="col-md-12 col-12 mt-5">
+                <div class="col-md-12 col-12">
                     <div class="title text-capitalize">
                         <h2 class="fs-1 fw-bold mb-4">{{ $dealer['nama'] }}</h2>
                     </div>
@@ -16,16 +16,12 @@
                           </thead>
                           <tbody>
                           <tr>
-                            <td>Id Dealer</td>
-                            <td>{{ $dealer->id }}</td>
+                            <td style="color: black"><span class="fw-bold">Alamat Dealer</span></td>
+                            <td style="color: black">{{ $dealer->alamat }}</td>
                           </tr>
                           <tr>
-                            <td>Alamat Dealer</td>
-                            <td>{{ $dealer->alamat }}</td>
-                          </tr>
-                          <tr>
-                            <td>Nomor Telepon Dealer</td>
-                            <td>{{ $dealer->telepon }}</td>
+                            <td style="color: black"><span class="fw-bold">Nomor Telepon Dealer</span></td>
+                            <td style="color: black">{{ $dealer->telepon }}</td>
                           </tr>
                           </tbody>
                         </table>

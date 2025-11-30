@@ -113,6 +113,7 @@ class ProfileController extends Controller
      */
     public function destroy(Profile $profile)
     {
+        Gate::authorize('developer', $profile);
         Profile::destroy($profile->id);
         return redirect('/user/profile')->with('success', 'Data berhasil dihapus');
     }

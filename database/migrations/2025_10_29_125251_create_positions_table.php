@@ -17,10 +17,7 @@ return new class extends Migration
                 table: 'users', 
                 indexName: 'positions_user_id'
             )->onDelete('cascade');
-            $table->foreignId('karir_id')->constrained(
-                table: 'karirs', 
-                indexName: 'positions_karirs_id'
-            );
+            $table->string('office');
             $table->integer('salary');
             $table->string('join');
             $table->timestamps();

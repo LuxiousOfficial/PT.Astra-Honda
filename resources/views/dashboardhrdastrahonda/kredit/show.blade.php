@@ -1,8 +1,8 @@
 <x-layoutdashboardahm>
-    <section class="form-pendaftaran">
+    <section class="form-pendaftaran bg-white rounded-3 p-4 mt-5">
         <div class="container">
             <div class="row text-center">
-                <div class="col-md-12 col-12 mt-5">
+                <div class="col-md-12 col-12">
                     <div class="title text-capitalize">
                         <h2 class="fs-1 fw-bold mb-4">{{ $kredit->nama }}</h2>
                     </div>
@@ -16,48 +16,48 @@
                           </thead>
                           <tbody>
                           <tr>
-                            <td>Email</td>
-                            <td>{{ $kredit->email }}</td>
+                            <td style="color: black"><span class="fw-bold">Email</span></td>
+                            <td style="color: black">{{ $kredit->email }}</td>
                           </tr>
                           <tr>
-                            <td>No HP</td>
-                            <td>{{ $kredit->nohp }}</td>
+                            <td style="color: black"><span class="fw-bold">No HP</span></td>
+                            <td style="color: black">{{ $kredit->nohp }}</td>
                           </tr>
                           <tr>
-                            <td>Alamat</td>
-                            <td>{{ $kredit->alamat }}</td>
+                            <td style="color: black"><span class="fw-bold">Alamat</span></td>
+                            <td style="color: black">{{ $kredit->alamat }}</td>
                           </tr>
                           <tr>
-                            <td>Provinsi</td>
-                            <td>{{ $kredit->provinsi }}</td>
+                            <td style="color: black"><span class="fw-bold">Provinsi</span></td>
+                            <td style="color: black">{{ $kredit->provinsi }}</td>
                           </tr>
                           <tr>
-                            <td>Kota</td>
-                            <td>{{ $kredit->kota }}</td>
+                            <td style="color: black"><span class="fw-bold">Kota</span></td>
+                            <td style="color: black">{{ $kredit->kota }}</td>
                           </tr>
                           <tr>
-                            <td>Down Payment</td>
-                            <td>{{ $kredit->dp }}</td>
+                            <td style="color: black"><span class="fw-bold">Down Payment</span></td>
+                            <td style="color: black">{{ $kredit->dp }}</td>
                           </tr>
                           <tr>
-                            <td>Jumlah Tenor</td>
-                            <td>{{ $kredit->jumlahtenor }}</td>
+                            <td style="color: black"><span class="fw-bold">Jumlah Tenor</span></td>
+                            <td style="color: black">{{ $kredit->jumlahtenor }}</td>
                           </tr>
                           <tr>
-                            <td>Kategori Motor</td>
-                            <td>{{ $kredit->kategorimotor }}</td>
+                            <td style="color: black"><span class="fw-bold">Kategori Motor</span></td>
+                            <td style="color: black">{{ $kredit->kategorimotor }}</td>
                           </tr>
                           <tr>
-                            <td>Varian Motor</td>
-                            <td>{{ $kredit->varianmotor }}</td>
+                            <td style="color: black"><span class="fw-bold">Varian Motor</span></td>
+                            <td style="color: black">{{ $kredit->varianmotor }}</td>
                           </tr>
                           <tr>
-                            <td>Rencana Pembelian</td>
-                            <td>{{ $kredit->rencanapembelian }}</td>
+                            <td style="color: black"><span class="fw-bold">Rencana Pembelian</span></td>
+                            <td style="color: black">{{ $kredit->rencanapembelian }}</td>
                           </tr>
                           <tr>
-                            <td>Pesan</td>
-                            <td>{{ $kredit->pesan }}</td>
+                            <td style="color: black"><span class="fw-bold">Pesan</span></td>
+                            <td style="color: black">{{ $kredit->pesan }}</td>
                           </tr>
                           </tbody>
                         </table>

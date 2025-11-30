@@ -12,7 +12,7 @@
         <div>
             <div class="row">
                 <div class="col-xxl-12 col-xl-12 col-md-12 col-12">
-                    <form method="post" action="/user/position">
+                    <form method="post" action="/dashboardhrdastrahonda/position">
                       @csrf
 
                       <div data-mdb-input-init class="form-outline mb-4">

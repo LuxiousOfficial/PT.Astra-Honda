@@ -98,6 +98,7 @@ class EducationController extends Controller
      */
     public function destroy(Education $education)
     {
+        Gate::authorize('developer', $education);
         Education::destroy($education->id);
         return redirect('/user/education')->with('success', 'Data berhasil dihapus');
     }

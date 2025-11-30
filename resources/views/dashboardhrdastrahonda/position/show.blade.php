@@ -1,4 +1,4 @@
-<x-layout-user>
+<x-layoutdashboardahm>
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
       <h1 class="fs-3 fw-bold text-danger text-capitalize">Data Position</h1>
     </div>
@@ -19,22 +19,22 @@
                           </thead>
                           <tbody>
                           <tr>
-                            <td>Salary</td>
-                            <td>Rp {{ $position->salary }}</td>
+                            <td style="color: black"><span class="fw-bold">Salary</span></td>
+                            <td style="color: black">Rp {{ $position->salary }}</td>
                           </tr>
                           <tr>
-                            <td>Join to Company</td>
-                            <td>{{ $position->join }}</td>
+                            <td style="color: black"><span class="fw-bold">Join to Company</span></td>
+                            <td style="color: black">{{ $position->join }}</td>
                           </tr>
                           </tbody>
                         </table>
                       </div>
                     </div>
                     <div class="daftar text-center text-capitalize mt-5">
-                      <a href="/user/position" class="fs-5 fw-bold text-decoration-none py-3 px-3 bg-danger text-light rounded">Back</a>
+                      <a href="/dashboardhrdastrahonda/position" class="fs-5 fw-bold text-decoration-none py-3 px-3 bg-danger text-light rounded">Back</a>
                     </div>
                 </div>
             </div>
         </div>
       </section>
-</x-layout-user>
+</x-layoutdashboardahm>
