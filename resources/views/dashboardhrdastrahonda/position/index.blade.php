@@ -25,7 +25,7 @@
       <div class="row">
         <div class="col-xxl-8 col-xl-8 col-md-8 col-12">
           <form class="d-flex my-3" role="search">
-            <input style="height: 3rem" class="form-control bg-gray-100" type="search" id="search" name="search" placeholder="Cari Data Candidate" aria-label="Search" autocomplete="off">
+            <input style="height: 3rem" class="form-control bg-gray-100" type="search" id="search" name="search" placeholder="Cari Data Candidates" aria-label="Search" autocomplete="off">
             <button style="height: 3rem" class="btn btn-outline-success bg-danger fw-bold text-white border-0 fs-5" type="submit">Search</button>
           </form>
         </div>

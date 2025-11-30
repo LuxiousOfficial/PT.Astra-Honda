@@ -181,7 +181,7 @@ Route::get('/products', function () {
 });
 
 Route::get('/dealer', function () {
-    return view('dealer', ['dealers' => Dealer::filter(request(['search']))->latest('id')->paginate(6)]);
+    return view('dealer', ['dealers' => Dealer::filter(request(['search']))->latest('id')->paginate(6)->withQueryString()]);
 });
 
 Route::get('/releases', function () {

@@ -35,7 +35,8 @@ class SearchController extends Controller
             $search = Service::latest('id')->get();
         }
 
-        return view('/dashboardhrdastrahonda/service/index', ['services' => Service::latest('id')->filter(request(['search']))->paginate(8)]);
+        return view('/dashboardhrdastrahonda/service/index', ['services' => Service::latest('id')->filter(request(['search']))->paginate(10)
+        ->withQueryString()]);
     }
 
     public function kredit(Request $request) {
@@ -47,7 +48,8 @@ class SearchController extends Controller
             $search = Kredit::latest('id')->get();
         }
 
-        return view('/dashboardhrdastrahonda/kredit/index', ['kredits' => Kredit::latest('id')->filter(request(['search']))->paginate(8)]);
+        return view('/dashboardhrdastrahonda/kredit/index', ['kredits' => Kredit::latest('id')->filter(request(['search']))->paginate(10)
+        ->withQueryString()]);
     }
 
     public function karir(Request $request) {
@@ -58,7 +60,8 @@ class SearchController extends Controller
             $search = Karir::latest('id')->get();
         }
 
-        return view('/dashboardhrdastrahonda/karir/index', ['karirs' => Karir::latest('id')->filter(request(['search']))->get()]);
+        return view('/dashboardhrdastrahonda/karir/index', ['karirs' => Karir::latest('id')->filter(request(['search']))->paginate(10)
+        ->withQueryString()]);
     }
 
     public function dealer(Request $request) {
@@ -70,7 +73,8 @@ class SearchController extends Controller
             $search = Dealer::latest('id')->get();
         }
 
-        return view('/dashboardhrdastrahonda/dealer/index', ['dealers' => Dealer::latest('id')->filter(request(['search']))->get()]);
+        return view('/dashboardhrdastrahonda/dealer/index', ['dealers' => Dealer::latest('id')->filter(request(['search']))->paginate(10)
+        ->withQueryString()]);
     }
 
     public function user(Request $request) {
@@ -82,7 +86,8 @@ class SearchController extends Controller
             $search = User::latest('id')->get();
         }
 
-        return view('/dashboardhrdastrahonda/user/index', ['users' => User::latest('id')->filter(request(['search']))->get()]);
+        return view('/dashboardhrdastrahonda/user/index', ['users' => User::latest('id')->filter(request(['search']))->paginate(20)
+        ->withQueryString()]);
     }
 
     public function candidates(Request $request) {
@@ -93,6 +98,7 @@ class SearchController extends Controller
             $search = Position::latest('id')->get();
         }
 
-        return view('/dashboardhrdastrahonda/position/index', ['positions' => Position::latest('id')->filter(request(['search']))->get()]);
+        return view('/dashboardhrdastrahonda/position/index', ['positions' => Position::latest('id')->filter(request(['search']))->paginate(20)
+        ->withQueryString()]);
     }
 }
