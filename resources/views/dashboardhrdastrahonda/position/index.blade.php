@@ -70,6 +70,9 @@
           </table>
         </div>
       </div>
-      {{ $positions->links() }}
+      
+      <div class="paginate mt-3">
+        {{ $positions->links() }}
+      </div>
     </section>
 </x-layoutdashboardahm>

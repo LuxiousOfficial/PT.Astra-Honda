@@ -81,7 +81,10 @@
             </tbody>
           </table>
         </div>
-        {{ $services->links() }}
+        
+        <div class="paginate mt-3">
+          {{ $services->links() }}
+        </div>
     </section>
   </div>
 </x-layoutdashboardahm>

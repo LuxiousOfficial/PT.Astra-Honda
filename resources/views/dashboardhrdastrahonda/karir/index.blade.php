@@ -75,6 +75,8 @@
         </tbody>
       </table>
     </div>
-    {{ $karirs->links() }}  
+    <div class="paginate mt-3">
+      {{ $karirs->links() }}   
+    </div> 
   </section>
 </x-layoutdashboardahm>

@@ -81,6 +81,9 @@
           </tbody>
         </table>
       </div>
-      {{ $kredist->links() }}
+      
+      <div class="paginate mt-3">
+        {{ $kredist->links() }}
+      </div>
     </section>
 </x-layoutdashboardahm>

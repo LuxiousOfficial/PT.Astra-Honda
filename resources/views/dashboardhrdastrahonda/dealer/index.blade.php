@@ -65,7 +65,9 @@
           </tbody>
         </table>
       </div>
-      {{ $dealers->links() }}    
+      <div class="paginate mt-3">
+        {{ $dealers->links() }}
+      </div>    
     </section>
 
   </x-layoutdashboardahm>
