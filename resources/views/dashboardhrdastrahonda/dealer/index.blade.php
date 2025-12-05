@@ -65,6 +65,7 @@
           </tbody>
         </table>
       </div>
+      {{ $dealers->links() }}    
     </section>
-  </div>
-</x-layoutdashboardahm>
+
+  </x-layoutdashboardahm>

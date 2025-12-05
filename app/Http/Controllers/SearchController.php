@@ -35,7 +35,7 @@ class SearchController extends Controller
             $search = Service::latest('id')->get();
         }
 
-        return view('/dashboardhrdastrahonda/service/index', ['services' => Service::latest('id')->filter(request(['search']))->paginate(10)
+        return view('/dashboardhrdastrahonda/service/index', ['services' => Service::latest('id')->filter(request(['search']))->paginate(20)
         ->withQueryString()]);
     }
 
@@ -48,7 +48,7 @@ class SearchController extends Controller
             $search = Kredit::latest('id')->get();
         }
 
-        return view('/dashboardhrdastrahonda/kredit/index', ['kredits' => Kredit::latest('id')->filter(request(['search']))->paginate(10)
+        return view('/dashboardhrdastrahonda/kredit/index', ['kredits' => Kredit::latest('id')->filter(request(['search']))->paginate(20)
         ->withQueryString()]);
     }
 

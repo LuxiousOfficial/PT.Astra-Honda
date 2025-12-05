@@ -75,5 +75,6 @@
         </tbody>
       </table>
     </div>
+    {{ $karirs->links() }}  
   </section>
 </x-layoutdashboardahm>

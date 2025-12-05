@@ -81,6 +81,7 @@
             </tbody>
           </table>
         </div>
+        {{ $services->links() }}
     </section>
   </div>
 </x-layoutdashboardahm>

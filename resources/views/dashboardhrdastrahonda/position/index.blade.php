@@ -70,5 +70,6 @@
           </table>
         </div>
       </div>
+      {{ $positions->links() }}
     </section>
 </x-layoutdashboardahm>

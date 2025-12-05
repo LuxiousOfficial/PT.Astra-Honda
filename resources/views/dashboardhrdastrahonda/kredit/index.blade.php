@@ -81,5 +81,6 @@
           </tbody>
         </table>
       </div>
+      {{ $kredist->links() }}
     </section>
 </x-layoutdashboardahm>
