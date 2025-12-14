@@ -8,9 +8,9 @@
                     @csrf
 
                     <div data-mdb-input-init class="form-outline mb-4">
-                      <label class="form-label fw-bold" for="karir_id">Posisi Yang di Lamar</label>
-                      <select class="form-select" aria-label="Default select example" id="karir_id" name="karir_id">
-                        <option selected>{{ old('karir_id', $position->karir->jabatan) }}</option>
+                      <label class="form-label fw-bold" for="office">Posisi Yang di Lamar</label>
+                      <select class="form-select" aria-label="Default select example" id="office" name="office">
+                        <option selected>{{ old('office', $position->office) }}</option>
                         @foreach ($karirs as $karir)
                         <option value="{{ $karir->id }}">{{ $karir->jabatan }}</option>
                         @endforeach
@@ -31,6 +31,51 @@
                           @error('join')
                           <div class="invalid-feedback">{{ $message }}</div>
                           @enderror
+                        </div>
+
+                        <div data-mdb-input-init class="form-outline mb-4">
+                          <label class="form-label fw-bold" for="administration">Seleksi Administrasi</label>
+                          <select class="form-select" aria-label="Default select example" id="administration" name="administration">
+                            <option selected>{{ $position->administration }}</option>                            
+                            <option value="Lulus">Lulus</option>
+                            <option value="Gagal">Gagal</option>
+                          </select>
+                        </div>
+
+                        <div data-mdb-input-init class="form-outline mb-4">
+                          <label class="form-label fw-bold" for="exam">Seleksi Ujian</label>
+                          <select class="form-select" aria-label="Default select example" id="exam" name="exam">
+                            <option selected>{{ $position->exam }}</option>
+                            <option value="Lulus">Lulus</option>
+                            <option value="Gagal">Gagal</option>
+                          </select>
+                        </div>
+
+                        <div data-mdb-input-init class="form-outline mb-4">
+                          <label class="form-label fw-bold" for="hr">Interview Hrd</label>
+                          <select class="form-select" aria-label="Default select example" id="hr" name="hr">
+                            <option selected>{{ $position->hr }}</option>
+                            <option value="Lulus">Lulus</option>
+                            <option value="Gagal">Gagal</option>
+                          </select>
+                        </div>
+
+                        <div data-mdb-input-init class="form-outline mb-4">
+                          <label class="form-label fw-bold" for="users">Interview User</label>
+                          <select class="form-select" aria-label="Default select example" id="users" name="users">
+                            <option selected>{{ $position->users }}</option>
+                            <option value="Lulus">Lulus</option>
+                            <option value="Gagal">Gagal</option>
+                          </select>
+                        </div>
+
+                        <div data-mdb-input-init class="form-outline mb-4">
+                          <label class="form-label fw-bold" for="hiring">Hiring</label>
+                          <select class="form-select" aria-label="Default select example" id="hiring" name="hiring">
+                            <option selected>{{ $position->hiring }}</option>
+                            <option value="Lulus">Lulus</option>
+                            <option value="Gagal">Gagal</option>
+                          </select>
                         </div>
 
                       <div class="text-center text-lg-start mt-4 pt-2">

@@ -43,6 +43,10 @@
                 <th scope="col">Position</th>
                 <th scope="col">Salary</th>
                 <th scope="col">Join</th>
+                <th scope="col">Administration Selection</th>
+                <th scope="col">HR Interview</th>
+                <th scope="col">User Interview</th>
+                <th scope="col">Hiring</th>
               </tr>
             </thead>
             <tbody>
@@ -60,10 +64,14 @@
                   </td>
                   <td style="color: black;">{{$position->created_at->format("j-m-Y H:i:s")}}</td>
                   <td style="color: black;">{{ $position->user->email }}</td>
-                  <td style="color: black;">{{ $position->id }}</td>
+                  <td style="color: black;">{{ $position->user->id }}</td>
                   <td style="color: black;">{{ $position->office }}</td>
                   <td style="color: black;">{{ $position->salary }}</td>
                   <td style="color: black;">{{ $position->join }}</td>
+                  <td style="color: black;">{{ $position->administration ? $position->administration : 'On Process'}}</td>
+                  <td style="color: black;">{{ $position->hr ? $position->hr : 'On Process'}}</td>
+                  <td style="color: black;">{{ $position->users ? $position->users : 'On Process'}}</td>
+                  <td style="color: black;">{{ $position->hiring ? $position->hiring : 'On Process'}}</td>
                 </tr>
               @endforeach
             </tbody>

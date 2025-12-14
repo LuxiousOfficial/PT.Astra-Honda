@@ -66,7 +66,7 @@
       </div>
       <div class="row mt-5 text-center text-capitalize">
         <div class="col bg-danger p-3">
-          <h4 class="text-center text-capitalize text-light fs-5">&copy; copyright 2025 PT. astra honda motor all rights reserved <br>by rommy ardiansyah</h4>
+          <h4 class="text-center text-capitalize text-light fs-5">&copy; copyright 2026 PT. astra honda motor all rights reserved <br>by rommy ardiansyah</h4>
         </div>
       </div>
     </div>

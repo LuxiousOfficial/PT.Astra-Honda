@@ -39,6 +39,51 @@
                             <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
                           </div>
+
+                          <div data-mdb-input-init class="form-outline mb-4">
+                            <label class="form-label fw-bold" for="administration">Seleksi Administrasi</label>
+                            <select class="form-select" aria-label="Default select example" id="administration" name="administration">
+                              <option value="Silahkan Pilih">Silahkan Pilih</option>
+                              <option value="Lulus">Lulus</option>
+                              <option value="Gagal">Gagal</option>
+                            </select>
+                          </div>
+
+                          <div data-mdb-input-init class="form-outline mb-4">
+                            <label class="form-label fw-bold" for="exam">Seleksi Ujian</label>
+                            <select class="form-select" aria-label="Default select example" id="exam" name="exam">
+                              <option value="Silahkan Pilih">Silahkan Pilih</option>
+                              <option value="Lulus">Lulus</option>
+                              <option value="Gagal">Gagal</option>
+                            </select>
+                          </div>
+
+                          <div data-mdb-input-init class="form-outline mb-4">
+                            <label class="form-label fw-bold" for="hr">Interview Hrd</label>
+                            <select class="form-select" aria-label="Default select example" id="hr" name="hr">
+                              <option value="Silahkan Pilih">Silahkan Pilih</option>
+                              <option value="Lulus">Lulus</option>
+                              <option value="Gagal">Gagal</option>
+                            </select>
+                          </div>
+
+                          <div data-mdb-input-init class="form-outline mb-4">
+                            <label class="form-label fw-bold" for="users">Interview User</label>
+                            <select class="form-select" aria-label="Default select example" id="users" name="users">
+                              <option value="Silahkan Pilih">Silahkan Pilih</option>
+                              <option value="Lulus">Lulus</option>
+                              <option value="Gagal">Gagal</option>
+                            </select>
+                          </div>
+
+                          <div data-mdb-input-init class="form-outline mb-4">
+                            <label class="form-label fw-bold" for="hiring">Hiring</label>
+                            <select class="form-select" aria-label="Default select example" id="hiring" name="hiring">
+                              <option value="Silahkan Pilih">Silahkan Pilih</option>
+                              <option value="Lulus">Lulus</option>
+                              <option value="Gagal">Gagal</option>
+                            </select>
+                          </div>
                           
                           <div class="text-center text-lg-start mt-4 pt-2">
                             <button  type="submit" name="daftar" data-mdb-button-init data-mdb-ripple-init class="btn btn-danger btn-lg w-100" style="padding-left: 1.5rem; padding-right: 1.5rem;">Save</button>

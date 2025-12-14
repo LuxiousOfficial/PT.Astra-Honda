@@ -38,7 +38,12 @@ class HrdPositionController extends Controller
         $validatedData = $request->validate([
             'office' => 'required|max:100',
             'salary' => 'required|max:50',
-            'join' => 'required|max:20'
+            'join' => 'required|max:20',
+            'administration' => 'required|max:10',
+            'exam' => 'required|max:10',
+            'hr' => 'required|max:10',
+            'users' => 'required|max:10',
+            'hiring' => 'required|max:10'
         ]);
         // 'user_id' => Auth::id(),
         $userId = Auth::id();
@@ -66,7 +71,7 @@ class HrdPositionController extends Controller
         return view('dashboardhrdastrahonda/position/edit', [
             'position' => $position,
             'karirs' => Karir::latest('id')->get(),
-            Gate::authorize('position', $position)
+            Gate::authorize('developer', $position)
         ]); 
     }
 
@@ -78,7 +83,12 @@ class HrdPositionController extends Controller
         $rules = [
             'office' => 'required|max:100',
             'salary' => 'required|max:50',
-            'join' => 'required|max:20'
+            'join' => 'required|max:20',
+            'administration' => 'required|max:10',
+            'exam' => 'required|max:10',
+            'hr' => 'required|max:10',
+            'users' => 'required|max:10',
+            'hiring' => 'required|max:10'
         ];
 
         $validatedData = $request->validate($rules);

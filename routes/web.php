@@ -25,6 +25,7 @@ use App\Http\Controllers\ResetPasswordController;
 use App\Http\Controllers\ForgotPasswordController;
 use App\Http\Controllers\HrdPositionController;
 use App\Http\Controllers\PositionController;
+use App\Http\Controllers\PositionsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SkillController;
 
@@ -264,3 +265,4 @@ Route::resource('/user/experience', ExperienceController::class)->middleware('au
 Route::resource('/user/skills', SkillController::class)->middleware('auth');
 Route::resource('/user/file', FileController::class)->middleware('auth');
 Route::resource('/user/position', PositionController::class)->middleware('auth');
+Route::get('/user/history', [PositionsController::class, 'index'])->middleware('auth');

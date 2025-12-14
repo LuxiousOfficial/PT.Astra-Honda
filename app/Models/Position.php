@@ -12,7 +12,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Position extends Model
 {
     use HasFactory;
-    protected $fillable = ['user_id', 'office', 'salary', 'join'];
+    protected $fillable = ['user_id', 'office', 'salary', 'join',
+                            'administration', 'exam', 'hr', 'users', 'hiring'];
 
     // protected $with = ['karir'];
 

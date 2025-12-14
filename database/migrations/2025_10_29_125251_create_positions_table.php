@@ -20,6 +20,11 @@ return new class extends Migration
             $table->string('office');
             $table->integer('salary');
             $table->string('join');
+            $table->string('administration')->nullable();
+            $table->string('exam')->nullable();
+            $table->string('hr')->nullable();
+            $table->string('users')->nullable();
+            $table->string('hiring')->nullable();
             $table->timestamps();
         });
     }
