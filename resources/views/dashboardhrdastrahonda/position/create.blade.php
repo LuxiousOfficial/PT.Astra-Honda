@@ -44,6 +44,7 @@
                             <label class="form-label fw-bold" for="administration">Seleksi Administrasi</label>
                             <select class="form-select" aria-label="Default select example" id="administration" name="administration">
                               <option value="Silahkan Pilih">Silahkan Pilih</option>
+                              <option value="Diproses">Diproses</option>
                               <option value="Lulus">Lulus</option>
                               <option value="Gagal">Gagal</option>
                             </select>
@@ -53,6 +54,7 @@
                             <label class="form-label fw-bold" for="exam">Seleksi Ujian</label>
                             <select class="form-select" aria-label="Default select example" id="exam" name="exam">
                               <option value="Silahkan Pilih">Silahkan Pilih</option>
+                              <option value="Diproses">Diproses</option>
                               <option value="Lulus">Lulus</option>
                               <option value="Gagal">Gagal</option>
                             </select>
@@ -62,6 +64,7 @@
                             <label class="form-label fw-bold" for="hr">Interview Hrd</label>
                             <select class="form-select" aria-label="Default select example" id="hr" name="hr">
                               <option value="Silahkan Pilih">Silahkan Pilih</option>
+                              <option value="Diproses">Diproses</option>
                               <option value="Lulus">Lulus</option>
                               <option value="Gagal">Gagal</option>
                             </select>
@@ -71,6 +74,7 @@
                             <label class="form-label fw-bold" for="users">Interview User</label>
                             <select class="form-select" aria-label="Default select example" id="users" name="users">
                               <option value="Silahkan Pilih">Silahkan Pilih</option>
+                              <option value="Diproses">Diproses</option>
                               <option value="Lulus">Lulus</option>
                               <option value="Gagal">Gagal</option>
                             </select>
@@ -80,6 +84,7 @@
                             <label class="form-label fw-bold" for="hiring">Hiring</label>
                             <select class="form-select" aria-label="Default select example" id="hiring" name="hiring">
                               <option value="Silahkan Pilih">Silahkan Pilih</option>
+                              <option value="Diproses">Diproses</option>
                               <option value="Lulus">Lulus</option>
                               <option value="Gagal">Gagal</option>
                             </select>

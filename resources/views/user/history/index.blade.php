@@ -24,6 +24,7 @@
                 <th scope="col">No</th>
                 <th scope="col">Date Of Application</th>
                 <th scope="col">Administration Selection</th>
+                <th scope="col">Online Psikotes</th>
                 <th scope="col">HR Interview</th>
                 <th scope="col">User Interview</th>
                 <th scope="col">Hiring</th>
@@ -35,10 +36,11 @@
               <tr class="text-center text-black fw-bold">
                   <td>{{ $loop->iteration }}</td>
                   <td style="color: black;">{{$position->created_at->format("j-m-Y H:i:s")}}</td>
-                  <td style="color: black;">{{ $position->administration ? $position->administration : 'On Process' }}</td>
-                  <td style="color: black;">{{ $position->hr ? $position->hr : 'On Process' }}</td>
-                  <td style="color: black;">{{ $position->users ? $position->users : 'On Process' }}</td>
-                  <td style="color: black;">{{ $position->hiring ? $position->hiring : 'On Process' }}</td>
+                  <td style="color: black;">{{ $position->administration ? $position->administration : 'Diproses' }}</td>
+                  <td style="color: black;">{{ $position->hr ? $position->exam : 'Diproses' }}</td>
+                  <td style="color: black;">{{ $position->hr ? $position->hr : 'Diproses' }}</td>
+                  <td style="color: black;">{{ $position->users ? $position->users : 'Diproses' }}</td>
+                  <td style="color: black;">{{ $position->hiring ? $position->hiring : 'Diproses' }}</td>
                 </tr>
               @endforeach
             </tbody>

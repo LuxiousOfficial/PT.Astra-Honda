@@ -57,7 +57,7 @@
       class="text-center justify-content-center py-2 px-2 px-xl-5 bg-danger">
       <!-- Copyright -->
       <div class="text-white text-capitalize fw-bold fs-6">
-       <p> &copy; Copyright 2025 PT. astra honda motor All rights reserved <br> by rommy ardiansyah</p>
+       <p> &copy; Copyright 2026 PT. astra honda motor All rights reserved <br> by rommy ardiansyah</p>
       </div>
       <!-- Copyright -->
     </div>
