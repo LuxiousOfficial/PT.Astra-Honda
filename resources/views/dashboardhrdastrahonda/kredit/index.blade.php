@@ -83,7 +83,7 @@
       </div>
       
       <div class="paginate mt-3">
-        {{ $kredist->links() }}
+        {{ $kredits->links() }}
       </div>
     </section>
 </x-layoutdashboardahm>
