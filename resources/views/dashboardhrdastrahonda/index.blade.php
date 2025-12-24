@@ -60,7 +60,7 @@
         <div class="table-responsive col-xxl-12 col-xl-12 col-md-12 col-12 small">
           <table class="table table-sm">
             <thead>
-              <tr class="table table-danger text-center text-black fw-bold">
+              <tr class="table table-success text-center text-black fw-bold">
                 <th scope="col">No</th>
                 <th scope="col">Nama</th>
                 <th scope="col">Email</th>
