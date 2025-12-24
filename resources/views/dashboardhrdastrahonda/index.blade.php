@@ -43,6 +43,14 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-6 col-6 my-2">
+                    <div class="card sport shadow" style="background-color: rgb(166, 255, 0); height: 7rem">
+                        <div class="card-body text-center" style="color: white">
+                          <h4 class="card-title fs-4">Candidates</h4>
+                          <h4 class="card-title fs-4">{{ $positions }}</h4>
+                        </div>
+                    </div>
+                </div>
                 @endcan
             </div>
         </div>

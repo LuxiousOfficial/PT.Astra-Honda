@@ -7,6 +7,7 @@ use App\Models\Karir;
 use App\Models\Dealer;
 use App\Models\Kredit;
 use App\Models\Pelamar;
+use App\Models\Position;
 use App\Models\Service;
 use Illuminate\Http\Request;
 
@@ -21,6 +22,7 @@ class DashboardController extends Controller
             'dealers' => Dealer::count(),
             'careers' => Karir::count(),
             'users' => User::count(),
+            'positions' => Position::count(),
             'kredits' => Kredit::latest('id')->get()
         ]);
     }
